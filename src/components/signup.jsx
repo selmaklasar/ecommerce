@@ -16,7 +16,7 @@ function Signup() {
         <div className="input_pass">
         <label className={style.label_pass}>Password</label><br/>
         <input type="text" placeholder="Password"></input><br/></div>
-        <div className="submitbtn">
+        <div className={style.submitbtn}>
         <button type="submit" value="submit">SUBMIT</button></div>
 
 

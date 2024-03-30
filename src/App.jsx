@@ -3,6 +3,7 @@ import{BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import React, { useState } from "react"
 import Signup from "./components/signup"
 import Login from "./components/Login";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 

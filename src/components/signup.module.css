@@ -19,6 +19,13 @@ button{
    border-radius: 3px;
    color: #fff;
    background-color: navy;
+   margin: 10px  0;
+  font-weight: bold;
+   
+}
+.submitbtn{
+padding-top: 15px;
+
 }
 button:hover{
    background-color: rgb(6, 4, 67);
