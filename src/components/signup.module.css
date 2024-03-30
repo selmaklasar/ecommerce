@@ -1,0 +1,28 @@
+.signup{
+   padding-top: 150px;
+   position: absolute;
+   padding-left: 100px;
+}
+label{
+   font-size: 25px;
+   
+}
+  input{
+   width: 450px;
+   height: 35px;
+   margin-bottom: 15px;
+}
+button{
+   font-size: 25px;
+   margin: 10px  0;
+   padding: 5px 19px;
+   border-radius: 3px;
+   color: #fff;
+   background-color: navy;
+}
+button:hover{
+   background-color: rgb(6, 4, 67);
+   font-size: 23px;
+   border-color: rgb(245, 242, 242);
+   
+}

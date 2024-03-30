@@ -1,0 +1,55 @@
+.header{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(16, 6, 60);
+    margin-top: 0px;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    z-index: 1000;
+
+    
+
+}
+.logo{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav_menu{
+display: flex;
+align-items: center;
+font-size: 25px;
+margin-right: 15px; 
+
+}
+.signup_link, .login_link {
+    text-decoration: none;
+ 
+    color: #fff;
+    margin-left: 15px;
+    margin-right: 20px;
+
+}
+ul{
+    list-style: none;
+}
+.signup_link:hover{
+
+    color: black;
+    
+    
+}
+.login_link:hover{
+    color: black;
+}
+
+
+
