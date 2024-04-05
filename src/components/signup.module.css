@@ -1,24 +1,41 @@
 .signup{
    padding-top: 150px;
    position: absolute;
-   padding-left: 100px;
+   padding-left: 450px;
+   
+  
+}
+.form_submission{
+   width: 600px;
+   height: 500px;
+   border: 2px solid rgb(149, 145, 145);
+   border-radius: 3px;
+   padding: 15px;
+
+}
+.heading{
+   font-size: 30px;
+  padding-left: 220px;
+  font-weight: 500;
 }
 label{
-   font-size: 25px;
+   font-size: 20px;
+   padding-top: 20px;
+   
    
 }
   input{
-   width: 450px;
+   width: 550px;
    height: 35px;
    margin-bottom: 15px;
 }
-button{
-   font-size: 25px;
+.btn{
+   font-size: 20px;
    margin: 10px  0;
    padding: 5px 19px;
    border-radius: 3px;
    color: #fff;
-   background-color: navy;
+   background-color: rgba(42, 40, 48, 0.923);
    margin: 10px  0;
   font-weight: bold;
    
@@ -27,9 +44,10 @@ button{
 padding-top: 15px;
 
 }
-button:hover{
-   background-color: rgb(6, 4, 67);
-   font-size: 23px;
+.btn:hover{
+   background-color:  rgba(42, 40, 48, 0.923);
+   font-size: 20px;
    border-color: rgb(245, 242, 242);
    
 }
+

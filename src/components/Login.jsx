@@ -6,13 +6,8 @@ import style from "./Login.module.css"
 function Login() {
   return (
    
-    <div className={style.Login_form}>
-      
-  
-      
-      
-  
-      <form action="submit" className={style.container}>
+    <div className={style.login_form}>
+       <form action="submit" className={style.container}>
       <h2 className={style.heading}>Sign In</h2>
         <p>Email</p>
         <input type="email" placeholder="Email"></input>
