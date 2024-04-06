@@ -84,55 +84,219 @@ ul{
 
 .icon{
     color: #fff;
-    font-size: 20px;
+    font-size: 22px;
    
 }
 
 
-.Searchbar  input{
+  .Searchbar  input{
     width: 300px;
-    border-radius: 7px;
-    right: 20px;
+    border-radius: 36px;
+    font-size: 5px;
+    padding-left: 40px;
+}
+
+.searchicon{
+    color: #fff;
+    padding-right: 17px;
+    font-size: 22px;
+    
 }
 .nav_menu  {
     float: right;
-   padding-left: 170px;
+    padding-left: 550px;
+   
 }
-
 @media screen and (max-width: 500px) {
     
     .Searchbar {
       padding-top: -20px; 
-      
-      width: 250px;
+      width: 230px;
       position: absolute; 
       z-index: 2; 
-      left: 40%;
-       
-       
-        
-    }
-    .Searchbar input{
-        top: 80px;
-
+      left: 67px;
+      border-radius: 30px;     
     }
     
-  
-    .Searchbar input{
-      width: 200px; 
-      display: block; 
-      margin: 0 auto;
-      margin-bottom: -80px; 
-    }
-    
-    .menu  ul li{
-        margin-top: 10px;
+    .searchicon {
+    padding-right: 20px;
     }
    
-    .nav_menu{
-        padding-right: 20px;
-    }   
+ .nav_menu{
     
+    padding-right: 395px;
+    margin-top: 10px;
+    
+    padding-left: 41px;
+
+
+    }   
+    .menu{
+        padding-right: 930px;
+    }      
+  }
+@media screen and (max-width: 430px) {
+    
+    .Searchbar {
+      padding-top: -20px; 
+      width: 230px;
+      position: absolute; 
+      z-index: 2; 
+      left: 86px;
+      border-radius: 30px;     
+    }
+    
+    .searchicon {
+    padding-right: 70px;
+    padding-right: 5px;
+ }
+   
+ .nav_menu{
+    padding-right: 338px;
+    padding-left: 201px;
+    }   
+    ul{
+        
+    padding-left: 165px;
+
+    }
+    .menu{
+        padding-right: 30px;
+    }
+    
+        
+    
+
+    }  
+    
+    @media screen and (max-width: 600px) {
+    
+        .Searchbar {
+          padding-top: -20px; 
+          width: 230px;
+          position: absolute; 
+          z-index: 2; 
+          right: 216px;
+          border-radius: 30px;     
+        }
+        
+        .searchicon {
+        padding-right: 70px;
+        
+        padding-right: 5px;
+    
+        }
+       
+     .nav_menu{
+       
+        margin-top: 10px;
+        
+    padding-right: 379px;
+    
+    padding-left: 338px;
+}
+
+
+    
+           
+        .menu{
+            padding-right: 30px;
+        }
+          
+        
+          
+          
+      }
+      
+  
+  @media screen and (max-width: 700px) {
+    
+    .Searchbar {
+      padding-top: -20px; 
+      width: 230px;
+      position: absolute; 
+      z-index: 2; 
+      right: 216px;
+      border-radius: 30px;     
+    }
+    
+    .searchicon {
+    padding-right: 70px;
+    
+    padding-right: 5px;
+
+    }
+   
+ .nav_menu{
+    padding-left: 363px;
+    margin-top: 10px;
+
+    }   
+    .menu{
+        padding-right: 30px;
+    }
+      
+    
+      
+      
+  }
+  @media screen and (max-width: 900px) {
+    
+    .Searchbar {
+      padding-top: -20px; 
+      width: 230px;
+      position: absolute; 
+      z-index: 2; 
+      right: 216px;
+      border-radius: 30px;     
+    }
+    
+    .searchicon {
+    padding-right: 70px;
+    
+    padding-right: 5px;
+
+    }
+   
+ .nav_menu{
+    padding-left: 363px;
+    margin-top: 10px;
+
+    }   
+    .menu{
+        padding-right: 30px;
+    }
+      
+    
+      
+      
+  }
+  @media screen and (max-width: 800px) {
+    
+    .Searchbar {
+      padding-top: -20px; 
+      width: 230px;
+      position: absolute; 
+      z-index: 2; 
+      right: 216px;
+      border-radius: 30px;     
+    }
+    
+    .searchicon {
+    padding-right: 70px;
+    
+    padding-right: 5px;
+
+    }
+   
+ .nav_menu{
+    padding-left: 363px;
+    margin-top: 10px;
+
+    }   
+    .menu{
+        padding-right: 30px;
+    }
       
     
       

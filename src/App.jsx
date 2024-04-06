@@ -5,6 +5,7 @@ import Signup from "./components/signup"
 import Login from "./components/Login";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import About from "./components/About";
+import EmptyCart from "./components/emptycart";
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
           <Route path="/signup" element={<Signup/>}/>
           <Route path="/Login" element={<Login/>}/>
           <Route path="/About" element={<About/>}/>
-          
+          <Route path="/EmptyCart" element={<EmptyCart/>}/>
         </Routes>
         </Router>
       

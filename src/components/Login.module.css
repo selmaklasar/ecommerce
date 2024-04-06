@@ -35,7 +35,7 @@
    flex-wrap: wrap;
    flex-direction: column;
    border: 2px solid rgb(149, 145, 145);
-   border-radius: 5px;
+   border-radius: 1px;
    padding: 0px 20px;
    width: 600px;
    height: 400px;
@@ -46,6 +46,7 @@
     width: 550px;
     height: 50px;
     font-size: 20px;
+    border-style: outset;
    
 }
 .btn{
@@ -105,6 +106,182 @@ input:hover{
        
         padding-left: 133px;
         margin-right: 120px;
+    
+    }
+   
+}
+@media screen and (max-width: 700px) {
+    .login_form{
+         padding-left: 83px;
+        padding-top: 125px;
+        width: 200px;
+
+    }
+    .login_form input{
+        width: 350px;
+        height: 30px;
+
+    }
+    .login_form p{
+        font-size: 10px;
+    }
+    .heading{
+        font-size: 25px;
+       
+        padding-left: 133px;
+        margin-right: 120px;
+    
+    }
+   
+}
+@media screen and (max-width: 800px) {
+    .login_form{
+         padding-left: 53px;
+        padding-top: 125px;
+        width: 200px;
+        padding-right: 70px;
+
+    }
+    .login_form input{
+        width: 350px;
+        height: 30px;
+
+    }
+    .login_form p{
+        font-size: 10px;
+    }
+    .heading{
+        font-size: 25px;
+       
+        padding-left: 133px;
+        margin-right: 120px;
+    
+    }
+   
+}
+@media screen and (max-width: 900px) {
+    .login_form{
+         padding-left: 100px;
+        padding-top: 100px;
+        width: 200px;
+        padding-right: 170px;
+
+    }
+    .login_form input{
+        width: 350px;
+        height: 30px;
+
+    }
+    .login_form p{
+        font-size: 15px;
+    }
+    .heading{
+        font-size: 25px;
+       
+        padding-left: 133px;
+        margin-right: 120px;
+    
+    }
+   
+}
+
+@media screen and (max-width: 1300px) {
+    .login_form{
+         padding-left: 170px;
+        padding-top: 50px;
+        width: 170px;
+        padding-right: 170px;
+
+    }
+    .login_form input{
+        width: 350px;
+        height: 30px;
+
+    }
+    .login_form p{
+        font-size: 15px;
+    }
+    .heading{
+        font-size: 25px;
+       
+        padding-left: 133px;
+        margin-right: 120px;
+    
+    }
+   
+}
+@media screen and (max-width: 1500px) {
+    .login_form{
+         padding-left: 270px;
+        padding-top: 50px;
+        width: 300px;
+        padding-right: 170px;
+
+    }
+    .login_form input{
+        width: 350px;
+        height: 30px;
+
+    }
+    .login_form p{
+        font-size: 15px;
+    }
+    .heading{
+        font-size: 25px;
+       
+        padding-left: 133px;
+        margin-right: 120px;
+    
+    }
+   
+}
+@media screen and (max-width: 1300px) {
+    .login_form{
+         padding-left: 170px;
+        padding-top: 50px;
+        padding-right: 10px;
+        width: 200px;
+
+    }
+    .login_form input{
+        width: 300px;
+        height: 25px;
+
+    }
+    .login_form p{
+        font-size: 15px;
+    }
+    .heading{
+        font-size: 20px;
+       
+        padding-left: 110px;
+        margin-right: 110px;
+    
+    }
+   
+}
+@media screen and (max-width: 500px) {
+    .login_form{
+         padding-left: 70px;
+        padding-top: 125px;
+        padding-right: 700px;
+        width: 200px;
+        
+
+    }
+    .login_form input{
+        width: 300px;
+        height: 25px;
+
+    }
+    .login_form p{
+        font-size: 15px;
+    }
+    .heading{
+        font-size: 20px;
+       
+        padding-left: 110px;
+        margin-right: 110px;
     
     }
    
