@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import About from "./components/About";
 import EmptyCart from "./components/emptycart";
 
-
+import Help from "./components/help";
 function App() {
   
 
@@ -21,6 +21,7 @@ function App() {
           <Route path="/Login" element={<Login/>}/>
           <Route path="/About" element={<About/>}/>
           <Route path="/EmptyCart" element={<EmptyCart/>}/>
+          <Route path="/Help" element={<Help/>}/>
         </Routes>
         </Router>
       

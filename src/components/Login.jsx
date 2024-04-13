@@ -10,7 +10,7 @@ function Login() {
        <form action="submit" className={style.container}>
       <h2 className={style.heading}>Sign In</h2>
         <p>Email</p>
-        <input type="email" placeholder="Email"></input>
+        <input type="email" placeholder="Email" className={style.email_input}></input>
         <p>Password</p>
         <input type="password" placeholder="Password"></input><br/>
         <div className="btnsubmit">

@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
-import style from "./HomePage.module.css"
+import React, { useState } from 'react'
+import style from "./help.module.css"
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartShopping ,faHeart,faBars,faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faCartShopping ,faHeart,faBars} from '@fortawesome/free-solid-svg-icons';
 
 
-function Home() {
- 
+function Help() {
   const [showSearchbar, setSearchbar]=useState(false);
 
   const toggleSearchbar =()=>{
@@ -22,9 +21,7 @@ function Home() {
   }
   return (
     <div>
-       
-    
-    <div className={style.header}></div>
+       <div className={style.header}></div>
     <p className={style.logo}>Logo</p>
     <div className={style.links}>
        
@@ -37,21 +34,27 @@ function Home() {
           <li><FontAwesomeIcon icon={faCartShopping} className={style.carticon}/></li>
           <li><FontAwesomeIcon icon={faHeart} className={style.hearticon}/></li>
           <li className={style.search_li}>
-          <input type="text" className={style.inputfield} placeholder="search"></input></li>  
+          <input type="text" className={style.inputfield} placeholder="search" autoComplete="off"></input></li>  
+         
       </div>
-      
+      <div className={style.dropdownlist}>
       <FontAwesomeIcon icon={faBars} className={style.bars} onClick={toggleDropdown}/>
       {showDropdown &&(
-        <div className={style.dropdownlist}>
          <ul className={style.lists}>
-        <li><Link to="/Login" className={style.login_link}>Login</Link></li>
-        <li><Link to="/signup" className={style.signup_link}>Signup</Link></li>
-        <li><Link to="/help" className={style.help_link}>Help</Link></li></ul>
-         </div>
+         <Link to="/Login" className={style.login_link}>Login</Link>
+         <Link to="/signup" className={style.signup_link}>Signup</Link>
+         <Link to="/help" className={style.help_link}>Help</Link>
+        <Link to="/signup">NEw &Featured</Link></ul>
       )}
       </div>
-    
+      <p className={style.heading}> GET HELP</p>
+      <div className={style.searchbar}>
+      
+      <input type="search" placeholder="What can we help you with ?" className={style.searchbox}></input>
+      
+      </div>
+    </div>
   )
 }
 
-export default Home
+export default Help

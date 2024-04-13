@@ -8,6 +8,7 @@ function Signup() {
     
       <form className={style.form_submission}>
       <p className={style.heading}>SignUp</p>
+     
         <div className={style.input_name}> 
         <label className={style.label_firstname}>FirstName</label><br/>
         <input type="text" placeholder="First Name"></input></div>

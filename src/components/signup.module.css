@@ -1,12 +1,16 @@
 .signup{
    padding-top: 150px;
    position: absolute;
-   padding-left: 450px;
+  
    
+  
+   padding-right: 346px;
+   padding-left: 183px;
+
   
 }
 .form_submission{
-   width: 600px;
+   width: 500px;
    height: 500px;
    border: 2px solid rgb(149, 145, 145);
    border-radius: 3px;
@@ -20,17 +24,17 @@
 }
 label{
    font-size: 20px;
-   padding-top: 20px;
+   padding-top: 15px;
    
    
 }
   input{
-   width: 550px;
+   width: 450px;
    height: 35px;
    margin-bottom: 15px;
 }
 .btn{
-   font-size: 20px;
+   font-size: 15px;
    margin: 10px  0;
    padding: 5px 19px;
    border-radius: 3px;
@@ -50,4 +54,147 @@ padding-top: 15px;
    border-color: rgb(245, 242, 242);
    
 }
+.heading{
+   
+   padding-left: 172px;
 
+}
+
+@media screen and (max-width: 1050px) {
+   .form_submission{
+      width: 407px;
+      height: 493px;
+      border: 2px solid rgb(149, 145, 145);
+      border-radius: 3px;
+      padding: 15px;
+   
+   }
+   .p{
+      padding-left: 132px;
+
+   }
+   .signup{
+  
+      padding-top: 111px;
+      
+      
+    padding-left: 308px;
+
+
+   }
+   input{
+      width: 350px;
+      height: 35px;
+      margin-bottom: 15px;
+      
+   }
+   label{
+      font-size: 20px;
+      padding-top: 20px;
+      
+      
+   }
+   
+}
+
+@media screen and (max-width: 800px) {
+   .form_submission{
+      width: 407px;
+      height: 493px;
+      border: 2px solid rgb(149, 145, 145);
+      border-radius: 3px;
+      padding: 15px;
+   
+   }
+   .p{
+      padding-left: 132px;
+
+   }
+   .signup{
+   padding-left: 121px;
+   padding-top: 100px;
+   }
+   input{
+      width: 350px;
+      height: 35px;
+      margin-bottom: 15px;
+      
+   }
+   label{
+      font-size: 20px;
+      padding-top: 20px;
+      
+      
+   }
+   
+}
+@media screen and (max-width: 770px) {
+   .form_submission{
+      width: 240px;
+      height: 253px;
+      border: 2px solid rgb(149, 145, 145);
+      border-radius: 3px;
+     
+   
+   }
+   .heading{
+      padding-left: 59px;
+      font-size: 20px;
+
+   }
+   .signup{
+   
+   
+   padding-left: 14px;
+   padding-top: 44px;
+
+   }
+   input{
+      width: 100px;
+      height: 20px;
+      
+      
+   }
+   label{
+      font-size: 10px;
+      padding-top: 10px;
+      
+      
+   }
+   
+}
+@media screen and (max-width: 400px) {
+   .form_submission{
+      width: 670px;
+      height: 590px;
+      border: 2px solid rgb(149, 145, 145);
+      border-radius: 3px;
+      padding: 15px;
+     
+      
+   
+   }
+   .heading{
+      padding-left: 132px;
+      font-size: 55px;
+
+   }
+   .signup{
+      padding-left: 189px;
+   
+   padding-top: 190px;
+   }
+   input{
+      width: 610px;
+      height: 45px;
+      margin-bottom: 15px;
+      
+   }
+   label{
+      font-size: 20px;
+      padding-top: 20px;
+      
+      
+   }
+   
+}

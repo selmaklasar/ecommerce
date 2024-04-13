@@ -18,7 +18,7 @@
    
 }
 .login_form{
-    padding: 170px 0 0  300px;
+    padding: 170px 0 0  200px;
     display: flex;
     flex-wrap: wrap;
 
@@ -34,9 +34,9 @@
    display: flex;
    flex-wrap: wrap;
    flex-direction: column;
-   border: 2px solid rgb(149, 145, 145);
+   border: 1px solid rgb(149, 145, 145);
    border-radius: 1px;
-   padding: 0px 20px;
+   padding: 10px 20px;
    width: 600px;
    height: 400px;
    
@@ -46,7 +46,7 @@
     width: 550px;
     height: 50px;
     font-size: 20px;
-    border-style: outset;
+    
    
 }
 .btn{
@@ -62,11 +62,13 @@ input:hover{
     border-color: rgb(26, 26, 27);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 419px) {
     .login_form{
-        
-      padding: 170px  0 190px  90px;
-      width: 300px;
+        padding-left: 42px;
+
+        padding-right: 728px;
+    padding-top: 95px;
+      
 
     }
     .login_form input{
@@ -84,8 +86,19 @@ input:hover{
         margin-right: 120px;
     
     }
-   
+    .container{
+    
+        padding-left: 12px;
+      
+        width: 319.6px;
+    
+    }
+    
 }
+
+.btnsubmit{
+       width: 100px;
+    }
 @media screen and (max-width: 360px) {
     .login_form{
         
@@ -132,18 +145,39 @@ input:hover{
         margin-right: 120px;
     
     }
+    @media screen and (max-width: 600px) {
+        .login_form {
+            padding: 20px; /* Adjust padding as needed */
+             /* Remove fixed width */
+        }
+        .login_form input {
+            width: 100%; /* Make input width 100% */
+            max-width: 350px; /* Add max-width to prevent input from stretching too much */
+        }
+        .heading {
+            padding-left: 0; /* Remove padding */
+            text-align: center; /* Center the heading */
+        }
+    }
    
 }
 @media screen and (max-width: 800px) {
     .login_form{
-         padding-left: 53px;
+        padding-left: 51px;
+
         padding-top: 125px;
         width: 200px;
-        padding-right: 70px;
+        padding-right: 10px;
+        
+   
+
 
     }
+    .container{
+        width: 400px;
+    }
     .login_form input{
-        width: 350px;
+        width: 200px;
         height: 30px;
 
     }
@@ -159,17 +193,19 @@ input:hover{
     }
    
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
     .login_form{
-         padding-left: 100px;
-        padding-top: 100px;
-        width: 200px;
-        padding-right: 170px;
+       width: 400px;  
+       height: 60px; 
+       
+   
+        
+    
 
     }
     .login_form input{
-        width: 350px;
-        height: 30px;
+        width: 450px;
+        height: 60px;
 
     }
     .login_form p{
@@ -210,9 +246,11 @@ input:hover{
     }
    
 }
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1024px) {
     .login_form{
-         padding-left: 270px;
+         
+    padding-left: 226px;
+
         padding-top: 50px;
         width: 300px;
         padding-right: 170px;
@@ -266,7 +304,7 @@ input:hover{
         padding-top: 125px;
         padding-right: 700px;
         width: 200px;
-        
+
 
     }
     .login_form input{
