@@ -1,21 +1,23 @@
-import React ,{ useState } from 'react'
-
-import style from "./signup.module.css";
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import style from "./contactUs.module.css";
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartShopping ,faHeart,faBars,faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faCartShopping ,faHeart,faBars,faXmark} from '@fortawesome/free-solid-svg-icons';
 
 
+function ContactUs() {
 
-
-function Signup() {
   const [showDropdown, setDropdown] = useState(false);
   const toggleDropdown = () => {
     setDropdown(!showDropdown);
   }
+
+
+
+
   return (
     <div>
-    <div className={style.header}></div>
+       <div className={style.header}></div>
     <p className={style.logo}>Logo</p>
     <div className={style.links}>
        
@@ -23,9 +25,9 @@ function Signup() {
         <Link to="/Login" className={style.login_link}>Login</Link>
        
         <Link to="/signup" className={style.signup_link}>Signup</Link>
-        
-        <Link to="/help" className={style.help_link}>Help
-        <div className={style.hovermenu}>
+      
+        <Link to="/help" className={style.help_link} >Help
+    <div className={style.hovermenu}>
     <Link to="/help" className={style.hoverhelp_link} >Help</Link>
       
 <Link to="/orderstatus" >Order Status</Link>
@@ -37,51 +39,56 @@ function Signup() {
 <Link to="/Feedback" > Feedback</Link>
 
 </div>
-        </Link></ul>
+    </Link>
+        </ul>
+       
         </div>
+      
+     
         <div className={style.headericons}>
           <li><FontAwesomeIcon icon={faCartShopping} className={style.carticon}/></li>
           <li><FontAwesomeIcon icon={faHeart} className={style.hearticon}/></li>
           <li className={style.search_li}>
           <input type="text" className={style.inputfield} placeholder="search"></input></li>  
-          
       </div>
+
+
+
+
+
+     
+     
+    
       <FontAwesomeIcon icon={faBars} className={style.bars} onClick={toggleDropdown}/>
+      <FontAwesomeIcon icon={faXmark} className={style.mark} />
       {showDropdown &&(
         <div className={style.dropdownlist}>
          <ul className={style.lists}>
         <li><Link to="/Login" className={style.login_link}>Login</Link></li>
         <li><Link to="/signup" className={style.signup_link}>Signup</Link></li>
         <li><Link to="/help" className={style.help_link}>Help</Link></li></ul>
-     </div>
-      )}
-      
-    <div className={style.signup}> 
+         
+
+
+
     
-      <form className={style.form_submission}>
-      <p className={style.heading}>SignUp</p>
-     
-        <div className={style.input_name}> 
-        <label className={style.label_firstname}>FirstName</label><br/>
-        <input type="text" placeholder="First Name"></input></div>
-        <div className={style.input_box}>
-        <label className={style.label_lastname}>LastName</label> <br/>
-        <input type="text" placeholder="Last Name"></input><br/></div>  
-        <div className={style.input_email}>
-        <label className={style.label_email}>Email Id</label><br/>
-        <input type="text" placeholder="Email Address"></input><br/></div>
-        <div className={style.input_pass}>
-        <label className={style.label_pass}>Password</label><br/>
-        <input type="password" placeholder="Password"></input><br/></div>
-        <div className={style.submitbtn}>
-        <button type="submit" value="submit" className={style.btn}>SUBMIT</button></div>
+        
 
+    
+   
+        
+        
 
-
-      </form>
-    </div>
+       
+   
+      </div>
+        
+         
+      )}
+      <h2 className={style.h2}>Contact US</h2>
     </div>
   )
 }
 
-export default Signup
+export default ContactUs
+ 

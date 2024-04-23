@@ -1,0 +1,52 @@
+
+.feedbackform{
+    width: 430px;
+    height: 300px;
+    border: 2px solid rgb(149, 145, 145);
+   border-radius: 7px;
+   
+  
+}
+.feedback{
+  padding: 150px;
+}
+
+.feedbackform  h2{
+    font-size: 19px;
+    text-align: center;
+    padding-top: 30px;
+}  
+.feedbackform p{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 15px;
+}
+.feedbackform input{
+    width: 300px;
+    height: 30px;
+   
+    color: black;
+    font-size: 20px;
+   
+}
+.fdbacksubmit{
+    text-align: center;
+    border-radius: 30px;
+    
+}
+.feedbackform .btnsubmit{
+    padding-left:270px;
+    padding-top: 20px;
+   
+}
+.feedbackform  button{
+    background-color: black;
+    border-radius: 3px;
+    color: #ffff;
+    padding-left: 15px;
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}

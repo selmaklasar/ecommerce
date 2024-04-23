@@ -1,40 +1,374 @@
-.signup{
-   padding-top: 150px;
-   position: absolute;
+.header{
+   width: 100%;
+   height: 100px;
+   background:  rgb(29, 28, 33);
+   display: flex;
+ 
+ }
+ .logo{
+   color: #f4eeee;
+   margin-top: -60px;
+   padding-left: 20px;
+  font-size: 10px;
+ 
+ }
+ .links{
+   margin-top: -45px;
+   
+ }
+ .links :hover{
+   color: #c7c2c2;
   
    
+ }
+ .headericons :hover{
+   color: #9a9797;
+ 
+ }
+ 
+ .links a{
+   text-decoration: none;
+   padding-left: 10px;
+   float: right;
+   font-size: 10px;
+   z-index:  1000;
+   display: inline;
+ 
+   
+ }
+ 
+ 
+ .login_link{
+ list-style: none;
+ padding-right: 40px;
+ color: #ffff;
+ 
+ 
+ }
+ 
+ .help_link{
+   color: #ffff;
+   
+ }
+ .hovermenu  {
+   background-color: #fff;
+   width: 120px;
+   height: 150px;
+ top: 27px;
+   z-index: 1000;
+   position: absolute;
+   margin-left: -50px;
+ display: none;
+ }
+ .hovermenu p{
+   color: #050000;
+  padding-left: 40px;
   
-   padding-right: 346px;
-   padding-left: 183px;
+  
+ 
+ 
+ }
+ .hoverhelp_link{
+   padding: 13px;
+   font-weight: 500;
+ }
+ .help_link:hover .hovermenu{
+   display: block;
+ }
+ .hovermenu  a{
+ margin-right: 50px;
+  color: #050000;
+  width: 70px;
+  padding: 3px;
+  
+ }
+ .headericons {
+   position: absolute;
+   right: 3px; /* Or based on your layout needs */
+   top: 0;
+   height: 100px; 
+   
+   
+ }
+ 
+ .signup_link{
+   color: #ffff;
+   list-style: none;
+ }
+ .inputfield{
+   float: right;
+   width: 100px;
+   height: 20px;
+   border-radius: 20px;
+   color: #050000;
+   
+ }
+ .search_li{
+ padding-top: 10px;
+ 
+ }
+ 
+ .headericons{
+   color: #ffff;
+   list-style: none;
+   padding-right: 38px;
+   
+   margin-top: 49px;
+ 
+  
+ 
+   
+ }
+ li{
+   display: inline;
+   float: right;
+  margin-left: 10px;
+   padding-top: 11px;
+ font-size: 10px;
+   
+   
+ }
+ .hearticon{
+   font-size: 15px;
+ }
+ .carticon{
+   padding-right: -30px;
+   
+   font-size: 15px;
+ }
+ 
+ .bars{
+   width: 30px;
+   height: 20px;
+   color: #f4eeee;
+   display: none;
+   
+   top: 37px;
+  
+ 
+   
+ }
+ .lists {
+   position: absolute;
+   
+   top: 2px;
+ 
+   right: 0;
+   background-color: #fff;
+   z-index: 1000;
+   display: block;
+   border: 1px solid #050000;
+   border-radius: 4px;
+ }
+ .lists{
+   width: 200px;
+   height: 1300px;
+   background-color: #110e0e;
+   
+ }
+ 
+ .dropdownlist{
+   width: fit-content;
+   height: auto;
+   
+   
+   position: right;
+ }
+ .lists li {
+   display: block;           
+   width: 100%;              
+   padding: 9px 0px;       
+   box-sizing: border-box;   
+   margin-bottom: 5px;       
+   color: #f1eded;          
+   background: #110e0e;  
+ 
+ }
+ 
+ .lists a {
+   font-size: 15px;
+   display: block;           
+   color: #e9e2e2;           
+   text-decoration: none;    
+   width: 100%;              
+ }
+ 
+ .lists a:hover {
+   background-color: #c7c2c2;
+   border-radius: 3px;
+   width: 190px;
+   padding: 0;
+ 
+ }
+   button{
+   
+   color: #020202fc;
+   border: none;
+   cursor: pointer;
+ padding-right: 30px;
+  font-size: 30px;
+   background-color: none;
+ 
+ }
+ .btncontainer ul {
+   padding-top: 90px;
+  padding-left: 250px;
+  
+   list-style-type: none; /* Removes bullet points from the list */
+   font-size: 15px;
+  
+   display: flex;
+   margin-right: 25px;
+ }
+ 
+ 
+ 
+ .dropdwn:hover  .dropdownContent{
+   display: block;
+   text-decoration: none;
+   padding: 10px 15px;
+ 
+ }
+ 
+ 
+ 
+   
+   
+ 
+   .dropdownContent a{
+   display: none;
+   color: #050000;
+   text-decoration: none;
+   padding: 10px 15px;
+ }
+ 
+ 
+ 
+ 
+ @media screen and (max-width:900px){
+   .links{
+     display: none;
+   }
+   .headericons{
+     margin-top: 41px;
+   }
+   .bars {
+     display: block;
+     padding-top: -90px;
+     position: absolute;
+     
+     top: 18px;
+ 
+     right: 0;
+   }
+  
+  .btncontainer{
+   padding-top: 90px;
+   padding-left: 50px;
+  }
+   
+ }
+ 
+ @media screen and (max-width:570px){
+   .links{
+     display: none;
+   }
+   .headericons{
+     margin-top: 49px;
+     display: inline;
+   }
+   .bars {
+     display: block;
+     padding-top: -90px;
+     position: absolute;
+     
+     top: 18px;
+ 
+     right: 0;
+   }
+  
+  .btncontainer ul{
+   padding-top: 50px;
+   padding-left: 30px;
+   font-size: 10px;
+   
+   
+ 
+  }
+   
+ }
+ 
+ @media screen and (max-width:880px){
+   .links{
+     display: none;
+   }
+   .headericons{
+     margin-top: 49px;
+   }
+   .bars {
+     display: block;
+     padding-top: -90px;
+     position: absolute;
+     
+     top: 18px;
+ 
+     right: 0;
+   }
+  
+  .btncontainer  ul{
+ 
+   
+   padding-left: 259px;
+ 
+   padding-top: 34px;
+ 
+   
+   font-size: 15px;
+   
+   
+ 
+  }
+   
+ }
+ 
+ .signup{
+   padding-top: 100px;
+   justify-content: center;
+  display: flex;
+  align-items: center;
 
-  
 }
 .form_submission{
-   width: 500px;
-   height: 500px;
-   border: 2px solid rgb(149, 145, 145);
+   
+      width: 350px;
+      height: 350px;
+ border: 1px solid rgb(149, 145, 145);
    border-radius: 3px;
-   padding: 15px;
+   padding: 20px;
+  
 
 }
-.heading{
-   font-size: 30px;
-  padding-left: 220px;
+.heading  {
+   font-size: 17px;
+ display: flex;
+ justify-content: center;
   font-weight: 500;
 }
-label{
-   font-size: 20px;
-   padding-top: 15px;
-   
+input{
+   width: 270px;
+   height: 20px;
+   border-radius: 1px;
+   font-size: 10px;
    
 }
-  input{
-   width: 450px;
-   height: 35px;
-   margin-bottom: 15px;
+label{
+   font-size: 10px;
+   padding-top: 10px;
+   
+   
 }
 .btn{
-   font-size: 15px;
+   font-size: 10px;
    margin: 10px  0;
    padding: 5px 19px;
    border-radius: 3px;
@@ -46,155 +380,50 @@ label{
 }
 .submitbtn{
 padding-top: 15px;
+}
+.hovermenu  {
+  background-color: #fff;
+  width: 120px;
+  height: 150px;
+top: 27px;
+  z-index: 1000;
+  position: absolute;
+  margin-left: -90px;
+display: none;
+}
+.hovermenu p{
+  color: #050000;
+ padding-left: 40px;
+ 
+ 
+
 
 }
-.btn:hover{
-   background-color:  rgba(42, 40, 48, 0.923);
-   font-size: 20px;
-   border-color: rgb(245, 242, 242);
-   
+.hoverhelp_link{
+  padding: 13px;
+  font-weight: 500;
 }
-.heading{
-   
-   padding-left: 172px;
-
+.help_link:hover .hovermenu{
+  display: block;
 }
-
-@media screen and (max-width: 1050px) {
-   .form_submission{
-      width: 407px;
-      height: 493px;
-      border: 2px solid rgb(149, 145, 145);
-      border-radius: 3px;
-      padding: 15px;
-   
-   }
-   .p{
-      padding-left: 132px;
-
-   }
-   .signup{
-  
-      padding-top: 111px;
-      
-      
-    padding-left: 308px;
-
-
-   }
-   input{
-      width: 350px;
-      height: 35px;
-      margin-bottom: 15px;
-      
-   }
-   label{
-      font-size: 20px;
-      padding-top: 20px;
-      
-      
-   }
-   
+.hovermenu  a{
+margin-right: 50px;
+ color: #050000;
+ width: 70px;
+ padding: 3px;
+ 
 }
 
-@media screen and (max-width: 800px) {
-   .form_submission{
-      width: 407px;
-      height: 493px;
-      border: 2px solid rgb(149, 145, 145);
-      border-radius: 3px;
-      padding: 15px;
+ 
    
-   }
-   .p{
-      padding-left: 132px;
-
-   }
-   .signup{
-   padding-left: 121px;
-   padding-top: 100px;
-   }
-   input{
-      width: 350px;
-      height: 35px;
-      margin-bottom: 15px;
-      
-   }
-   label{
-      font-size: 20px;
-      padding-top: 20px;
-      
-      
-   }
+ 
+ 
+ 
+ 
+ 
+ 
    
-}
-@media screen and (max-width: 770px) {
-   .form_submission{
-      width: 240px;
-      height: 253px;
-      border: 2px solid rgb(149, 145, 145);
-      border-radius: 3px;
-     
-   
-   }
-   .heading{
-      padding-left: 59px;
-      font-size: 20px;
-
-   }
-   .signup{
-   
-   
-   padding-left: 14px;
-   padding-top: 44px;
-
-   }
-   input{
-      width: 100px;
-      height: 20px;
-      
-      
-   }
-   label{
-      font-size: 10px;
-      padding-top: 10px;
-      
-      
-   }
-   
-}
-@media screen and (max-width: 400px) {
-   .form_submission{
-      width: 670px;
-      height: 590px;
-      border: 2px solid rgb(149, 145, 145);
-      border-radius: 3px;
-      padding: 15px;
-     
-      
-   
-   }
-   .heading{
-      padding-left: 132px;
-      font-size: 55px;
-
-   }
-   .signup{
-      padding-left: 189px;
-   
-   padding-top: 190px;
-   }
-   input{
-      width: 610px;
-      height: 45px;
-      margin-bottom: 15px;
-      
-   }
-   label{
-      font-size: 20px;
-      padding-top: 20px;
-      
-      
-   }
-   
-}
+ 
+ 
+ 
+ 

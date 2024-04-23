@@ -28,8 +28,27 @@ function Help() {
         <ul>
         <Link to="/Login" className={style.login_link}>Login</Link>
         <Link to="/signup" className={style.signup_link}>Signup</Link>
-        <Link to="/help" className={style.help_link}>Help</Link></ul>
+        <Link to="/help" className={style.help_link}>Help
+        <div className={style.hovermenu}>
+    <Link to="/help" className={style.hoverhelp_link}>Help</Link>
+      
+<Link to="/orderstatus" >Order Status</Link>
+
+<Link to="/contactUs" >Contact Us</Link>
+<Link to="/" >Returns</Link>
+<Link to="" >Privacy Policy</Link>
+<Link to="" >Terms of Use</Link>
+<Link to="/Feedback" > Feedback</Link>
+
+</div>
+    </Link>
+        </ul>
+       
         </div>
+      
+        
+        
+        
         <div className={style.headericons}>
           <li><FontAwesomeIcon icon={faCartShopping} className={style.carticon}/></li>
           <li><FontAwesomeIcon icon={faHeart} className={style.hearticon}/></li>

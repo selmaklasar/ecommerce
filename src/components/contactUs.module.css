@@ -1,0 +1,382 @@
+.header{
+    width: 100%;
+    height: 100px;
+    background:  rgb(29, 28, 33);
+    display: flex;
+  
+  }
+  .logo{
+    color: #f4eeee;
+    margin-top: -60px;
+    padding-left: 20px;
+   font-size: 10px;
+  
+  }
+  .links{
+    margin-top: -45px;
+    
+  }
+  .links :hover{
+    color: #c7c2c2;
+   
+    
+  }
+  .links a::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #efe9e9;
+    transition: all -5s;
+  }
+  .links a:hover::before{
+  width: 100%;
+  
+  
+  
+  }
+  .headericons :hover{
+    color: #9a9797;
+  
+  }
+  
+  .links a{
+    text-decoration: none;
+    padding-left: 10px;
+    float: right;
+    font-size: 10px;
+    z-index:  1000;
+    display: inline;
+  
+    
+  }
+  
+  
+  .login_link{
+  list-style: none;
+  padding-right: 40px;
+  color: #ffff;
+  
+  
+  }
+  
+  .help_link{
+    color: #ffff;
+    
+  }
+  .hovermenu  {
+    background-color: #fff;
+    width: 120px;
+    height: 150px;
+  top: 40px;
+    z-index: 1000;
+    position: absolute;
+    margin-left: -50px;
+  display: none;
+  box-shadow: 2px;
+  }
+  .hovermenu p{
+    color: #050000;
+   padding-left: 40px;
+   
+   
+  
+  
+  }
+  .hoverhelp_link{
+    padding: 13px;
+    font-weight: 500;
+  }
+  .help_link:hover .hovermenu{
+    display: block;
+  }
+  .hovermenu  a{
+  margin-right: 50px;
+   color: #050000;
+   width: 70px;
+   padding: 3px;
+   
+  }
+  .headericons {
+    position: absolute;
+    right: 3px; /* Or based on your layout needs */
+    top: 0;
+    height: 100px; 
+    
+    
+  }
+  
+  .signup_link{
+    color: #ffff;
+    list-style: none;
+  }
+  .inputfield{
+    float: right;
+    width: 100px;
+    height: 20px;
+    border-radius: 20px;
+    color: #020000;
+    
+  }
+  .search_li{
+  padding-top: 10px;
+  
+  
+  }
+  
+  .headericons{
+    color: #ffff;
+    list-style: none;
+    padding-right: 38px;
+    
+    margin-top: 49px;
+  
+   
+  
+    
+  }
+  li{
+    display: inline;
+    float: right;
+   margin-left: 10px;
+    padding-top: 11px;
+  font-size: 10px;
+    
+    
+  }
+  .hearticon{
+    font-size: 15px;
+  }
+  .carticon{
+    padding-right: -30px;
+    
+    font-size: 15px;
+  }
+  
+  .bars{
+    width: 30px;
+    height: 20px;
+    color: #f4eeee;
+    display: none;
+    
+    top: 37px;
+   
+  
+    
+  }
+  .lists {
+    position: absolute;
+    justify-content: center;
+    top: 2px;
+  
+    right: 0;
+    background-color: #fff;
+    z-index: 1000;
+    display: block;
+    border: 1px solid #050000;
+    border-radius: 4px;
+  }
+  .lists{
+    width: 200px;
+    height: 1300px;
+    background-color: #110e0e;
+    
+  }
+  
+  .dropdownlist{
+    width: fit-content;
+    height: auto;
+    
+    
+    position: right;
+  }
+  .lists li {
+    display: block;           
+    width: 100%;              
+    padding: 9px 0px;       
+    box-sizing: border-box;   
+    margin-bottom: 5px;       
+    color: #f1eded;          
+    background: #110e0e;  
+    
+   
+   
+  
+  
+  }
+  
+  .lists a {
+    font-size: 15px;
+    display: block;           
+    color: #e9e2e2;           
+    text-decoration: none;    
+    width: 100%; 
+    justify-content: center;     
+    display: flex; 
+    padding-right: 40px;       
+  }
+  
+  .lists a:hover{
+    color: #9a9797;
+  }
+    button{
+    
+    color: #020202fc;
+    border: none;
+    cursor: pointer;
+  padding-right: 30px;
+   font-size: 30px;
+    background-color: none;
+  
+  }
+  .btncontainer ul {
+    padding-top: 90px;
+   padding-left: 250px;
+   
+    list-style-type: none; /* Removes bullet points from the list */
+    font-size: 15px;
+   
+    display: flex;
+    margin-right: 25px;
+  }
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+    .dropdownContent a{
+    display: none;
+    color: #050000;
+    text-decoration: none;
+    padding: 10px 15px;
+  }
+  
+  
+  
+  
+  @media screen and (max-width:900px){
+    .links{
+      display: none;
+    }
+    .headericons{
+      margin-top: 41px;
+    }
+    .bars {
+      display: block;
+      padding-top: -90px;
+      position: absolute;
+      
+      top: 18px;
+  
+      right: 0;
+    }
+   
+   .btncontainer{
+    padding-top: 90px;
+    padding-left: 50px;
+   }
+    
+  }
+  
+  @media screen and (max-width:570px){
+    .links{
+      display: none;
+    }
+    .headericons{
+      margin-top: 49px;
+      display: inline;
+    }
+    .bars {
+      display: block;
+      padding-top: -90px;
+      position: absolute;
+      
+      top: 18px;
+  
+      right: 0;
+    }
+   
+   .btncontainer ul{
+    padding-top: 50px;
+    padding-left: 30px;
+    font-size: 10px;
+    
+    
+  
+   }
+    
+  }
+  
+  @media screen and (max-width:880px){
+    .links{
+      display: none;
+    }
+    .headericons{
+      margin-top: 49px;
+    }
+    .bars {
+      display: block;
+      padding-top: -90px;
+      position: absolute;
+      
+      top: 18px;
+  
+      right: 0;
+    }
+   
+   .btncontainer  ul{
+  
+    
+    padding-left: 259px;
+  
+    padding-top: 34px;
+  
+    
+    font-size: 15px;
+    
+    
+  
+   }
+    
+  }
+  
+  .content  a{
+  list-style: none;
+  text-decoration: none;
+  padding: 15px;
+  justify-content: center;
+  text-align: center;
+  color: #020000;
+  
+    font-size: 15px;
+  }
+  .dropdwn{
+    padding-top: 80px;
+    padding-left: 270px;
+  }
+  
+  .listitems  a{
+    display: block;
+   color: #020000;
+   text-decoration: none;
+   font-size: 15px;
+   padding: 10px;
+   padding-left: 290px;
+  
+    
+  }
+  
+  
+
+.h2{
+   display: flex;
+   justify-content: center;
+   padding-top: 100px ;
+}
