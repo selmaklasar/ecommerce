@@ -1,19 +1,22 @@
+
+
+
 .header{
   width: 100%;
-  height: 100px;
+  height: 70px;
   background:  rgb(29, 28, 33);
   display: flex;
 
 }
 .logo{
   color: #f4eeee;
-  margin-top: -60px;
+  margin-top: -50px;
   padding-left: 20px;
  font-size: 10px;
 
 }
 .links{
-  margin-top: -45px;
+  margin-top: -36px;
   
 }
 .links :hover{
@@ -21,26 +24,8 @@
  
   
 }
-.links a::before{
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #efe9e9;
-  transition: all -5s;
-}
-.links a:hover::before{
-width: 100%;
 
 
-
-}
-.headericons :hover{
-  color: #9a9797;
-
-}
 
 .links a{
   text-decoration: none;
@@ -49,10 +34,10 @@ width: 100%;
   font-size: 10px;
   z-index:  1000;
   display: inline;
-
+ color: #fff;
+  
   
 }
-
 
 .login_link{
 list-style: none;
@@ -70,12 +55,16 @@ color: #ffff;
   background-color: #fff;
   width: 120px;
   height: 150px;
-top: 40px;
+  top: 20px; 
   z-index: 1000;
   position: absolute;
-  margin-left: -50px;
+  margin-left: 750px;
 display: none;
-box-shadow: 2px;
+border-radius: 3px;
+padding-top: 15px;
+
+
+
 }
 .hovermenu p{
   color: #050000;
@@ -99,9 +88,18 @@ margin-right: 50px;
  padding: 3px;
  
 }
+.hovermenu {
+  display: none; 
+}
+
+.help_link:hover + .hovermenu,
+.hovermenu:hover {
+  display: block; /* show when hovering over the link */
+  
+}
 .headericons {
   position: absolute;
-  right: 3px; /* Or based on your layout needs */
+  right: 3px; 
   top: 0;
   height: 100px; 
   
@@ -115,13 +113,13 @@ margin-right: 50px;
 .inputfield{
   float: right;
   width: 100px;
-  height: 20px;
+  height: 17px;
   border-radius: 20px;
   color: #020000;
   
 }
 .search_li{
-padding-top: 10px;
+  padding-top: 9px;
 
 
 }
@@ -131,11 +129,9 @@ padding-top: 10px;
   list-style: none;
   padding-right: 38px;
   
-  margin-top: 49px;
+  margin-top: 29px;
 
- 
 
-  
 }
 li{
   display: inline;
@@ -146,26 +142,24 @@ font-size: 10px;
   
   
 }
+
 .hearticon{
-  font-size: 15px;
+  font-size: 12px;
 }
 .carticon{
   padding-right: -30px;
   
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .bars{
-  width: 30px;
-  height: 20px;
-  color: #f4eeee;
   display: none;
-  
-  top: 37px;
- 
-
-  
+  width: 25px;
+  height: 15px;
+  color: #f4eeee;
+  top: 39px;
 }
+
 .lists {
   position: absolute;
   justify-content: center;
@@ -200,11 +194,6 @@ font-size: 10px;
   margin-bottom: 5px;       
   color: #f1eded;          
   background: #110e0e;  
-  
- 
- 
-
-
 }
 
 .lists a {
@@ -219,7 +208,7 @@ font-size: 10px;
 }
 
 .lists a:hover{
-  color: #9a9797;
+  color: #575454;
 }
   button{
   
@@ -242,55 +231,18 @@ padding-right: 30px;
   margin-right: 25px;
 }
 
-
-
-
-
-
-
-  
-  
-
   .dropdownContent a{
   display: none;
   color: #050000;
   text-decoration: none;
   padding: 10px 15px;
 }
-
-
-
-
-@media screen and (max-width:900px){
-  .links{
-    display: none;
-  }
-  .headericons{
-    margin-top: 41px;
-  }
-  .bars {
-    display: block;
-    padding-top: -90px;
-    position: absolute;
-    
-    top: 18px;
-
-    right: 0;
-  }
- 
- .btncontainer{
-  padding-top: 90px;
-  padding-left: 50px;
- }
-  
-}
-
 @media screen and (max-width:570px){
   .links{
     display: none;
   }
   .headericons{
-    margin-top: 49px;
+    margin-top: 32px;
     display: inline;
   }
   .bars {
@@ -303,14 +255,7 @@ padding-right: 30px;
     right: 0;
   }
  
- .btncontainer ul{
-  padding-top: 50px;
-  padding-left: 30px;
-  font-size: 10px;
-  
-  
-
- }
+ 
   
 }
 
@@ -319,7 +264,7 @@ padding-right: 30px;
     display: none;
   }
   .headericons{
-    margin-top: 49px;
+    margin-top: 32px;
   }
   .bars {
     display: block;
@@ -331,19 +276,7 @@ padding-right: 30px;
     right: 0;
   }
  
- .btncontainer  ul{
-
-  
-  padding-left: 259px;
-
-  padding-top: 34px;
-
-  
-  font-size: 15px;
-  
-  
-
- }
+ 
   
 }
 

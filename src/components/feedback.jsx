@@ -13,7 +13,7 @@ function Feedback() {
       <div className={style.fdbacksubmit}>
       <input type='text'></input></div>
       <div className={style.btnsubmit}>
-      <button>Submit</button></div>
+      <button type='submit'>Submit</button></div>
       </div>
       </div>
       

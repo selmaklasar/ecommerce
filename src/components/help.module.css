@@ -1,6 +1,6 @@
 .header{
   width: 100%;
-  height: 100px;
+  height: 70px;
   background:  rgb(29, 28, 33);
   display: flex;
 
@@ -15,8 +15,8 @@
 
 }
 .links{
-  margin-top: -45px;
   
+  margin-top: -30px;
 }
 .links :hover{
   color: #c7c2c2;
@@ -34,8 +34,9 @@
   float: right;
   font-size: 10px;
   z-index:  1000;
-  display: inline;
-
+  display: block;
+  
+ 
   
 }
 
@@ -56,10 +57,10 @@ color: #ffff;
   background-color: #fff;
   width: 120px;
   height: 150px;
-top: 30px;
+top: 20px;
   z-index: 1000;
   position: absolute;
-  margin-left: -30px;
+  margin-left: 750px;
 display: none;
 }
 .hovermenu p{
@@ -67,24 +68,35 @@ display: none;
  padding-left: 40px;
  
  
+ 
 
 }
 .help_link:hover .hovermenu{
   display: block;
 }
+
+
+.help_link:hover + .hovermenu,
+.hovermenu:hover {
+  display: block; /* show when hovering over the link */
+  
+}
 .hovermenu  a{
 margin-right: 40px;
  color: #050000;
  width: 70px;
+ padding: 3px;
+ display: block; 
  
 }
+
 .hoverhelp_link{
   padding: 13px;
   font-weight: 500;
 }
 .headericons {
   position: absolute;
-  right: 3px; /* Or based on your layout needs */
+  right: 3px; 
   top: 0;
   height: 100px; 
   
@@ -104,15 +116,65 @@ margin-right: 40px;
   
 }
 .search_li{
-padding-top: 10px;
+padding-top: 9px;
 
+}
+.hovermenu  {
+  background-color: #fff;
+  width: 120px;
+  height: 150px;
+  top: 20px; 
+  z-index: 1000;
+  position: absolute;
+  margin-left: 750px;
+display: none;
+
+
+
+
+}
+.hovermenu p{
+  color: #050000;
+ padding-left: 40px;
+ 
+ 
+
+
+}
+.hoverhelp_link{
+  padding: 13px;
+  font-weight: 500;
+}
+.help_link:hover .hovermenu{
+  display: block;
+}
+.hovermenu  a{
+margin-right: 50px;
+ color: #050000;
+ width: 70px;
+ padding: 3px;
+ z-index: 999;
+ 
+}
+.hovermenu {
+  display: none; 
+}
+
+.help_link:hover + .hovermenu,
+.hovermenu:hover {
+  display: block; /* show when hovering over the link */
+  
 }
 
 .headericons{
   color: #ffff;
   list-style: none;
   padding-right: 30px;
-  margin-top: 49px;
+
+ 
+  margin-top: 29px;
+
+
  
 
   
@@ -182,8 +244,8 @@ font-size: 10px;
   font-size: 15px;
 }
 .bars{
-  width: 30px;
-  height: 20px;
+  width: 25px;
+  height: 15px;
   color: #f4eeee;
   display: none;
   
@@ -254,37 +316,16 @@ padding-right: 30px;
   background-color: none;
 
 }
-.btncontainer ul {
-  padding-top: 90px;
- padding-left: 250px;
- 
-  list-style-type: none; /* Removes bullet points from the list */
-  font-size: 15px;
- 
-  display: flex;
-  margin-right: 25px;
-}
 
 
 
-.dropdwn:hover  .dropdownContent{
-  display: block;
-  text-decoration: none;
-  padding: 10px 15px;
-
-}
 
 
 
   
   
 
-  .dropdownContent a{
-  display: none;
-  color: #050000;
-  text-decoration: none;
-  padding: 10px 15px;
-}
+ 
 
  
 
@@ -294,7 +335,7 @@ padding-right: 30px;
     display: none;
   }
   .headericons{
-    margin-top: 49px;
+    margin-top: 32px;
   }
   .bars {
     display: block;
@@ -306,10 +347,7 @@ padding-right: 30px;
     right: 0;
   }
  
- .btncontainer{
-  padding-top: 90px;
-  padding-left: 50px;
- }
+ 
   
 }
 
@@ -318,7 +356,7 @@ padding-right: 30px;
     display: none;
   }
   .headericons{
-    margin-top: 49px;
+    margin-top: 32px;
   }
   .bars {
     display: block;
@@ -330,14 +368,7 @@ padding-right: 30px;
     right: 0;
   }
  
- .btncontainer ul{
-  padding-top: 50px;
-  padding-left: 30px;
-  font-size: 10px;
-  
-  
-
- }
+ 
   
 }
 
@@ -346,7 +377,7 @@ padding-right: 30px;
     display: none;
   }
   .headericons{
-    margin-top: 49px;
+    margin-top: 32px;
   }
   .bars {
     display: block;
@@ -358,26 +389,14 @@ padding-right: 30px;
     right: 0;
   }
  
- .btncontainer  ul{
-
-  
-  padding-left: 259px;
-
-  padding-top: 34px;
-
-  
-  font-size: 15px;
-  
-  
-
- }
+ 
 }
 
 
   @media screen and (max-width:700px){
    
     .headericons{
-      margin-top: 49px;
+      margin-top: 32px;
     }
     .bars {
       display: block;
@@ -406,7 +425,7 @@ padding-right: 30px;
   @media screen and (max-width:650px){
    
     .headericons{
-      margin-top: 50px;
+      margin-top: 32px;
     }
     .bars {
       display: block;
@@ -436,7 +455,7 @@ padding-right: 30px;
   @media screen and (max-width:500px){
    
     .headericons{
-      margin-top: 49px;
+      margin-top: 32px;
     }
     .bars {
       display: block;
@@ -479,6 +498,7 @@ padding-right: 30px;
     display: flex;              
   justify-content: center;     
   align-items: center; 
+
     
 }
 .searchbox{
@@ -487,5 +507,4 @@ padding-right: 30px;
     border-radius: 10px;
     border: 1px solid rgb(87, 87, 87);
 }
-
 

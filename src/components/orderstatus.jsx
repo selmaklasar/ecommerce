@@ -8,6 +8,14 @@ import { faCartShopping ,faHeart,faBars} from '@fortawesome/free-solid-svg-icons
 
 
 function OrderStatus() {
+   
+  const[hover,setHover]= useState(false);
+  const toggleHover= () => {
+    setHover(!hover);
+  }
+
+
+
      const [showDropdown, setDropdown] = useState(false);
     const toggleDropdown = () => {
       setDropdown(!showDropdown);
@@ -28,20 +36,20 @@ function OrderStatus() {
        
         <Link to="/signup" className={style.signup_link}>Signup</Link>
       
-        <Link to="/help" className={style.help_link} >Help
+        <Link to="/help" className={style.help_link} onMouseEnter={toggleHover}>Help</Link>
+        {hover&&(
     <div className={style.hovermenu}>
     <Link to="/help" className={style.hoverhelp_link} >Help</Link>
       
-<Link to="/" >Order Status</Link>
-
-<Link to="/contactUs" >Contact</Link>
-<Link to="/" >Returns</Link>
-<Link to="" >Privacy Policy</Link>
-<Link to="" >Terms of Use</Link>
-<Link to="/Feedback" > Feedback</Link>
+         <Link to="/" >Order Status</Link>
+        <Link to="/contactUs" >Contact</Link>
+        <Link to="/Returns" >Returns</Link>
+        <Link to="/privacypolicy" >Privacy Policy</Link>
+        <Link to="/Termsofuse" >Terms of Use</Link>
+        <Link to="/Feedback" > Feedback</Link>
 
 </div>
-    </Link>
+        )}
         </ul>
        
         </div>
@@ -60,24 +68,12 @@ function OrderStatus() {
          <ul className={style.lists}>
         <li><Link to="/Login" className={style.login_link}>Login</Link></li>
         <li><Link to="/signup" className={style.signup_link}>Signup</Link></li>
-        <li><Link to="/help" className={style.help_link}>Help</Link></li></ul>
-        
+        <li><Link to="/help" className={style.help_link} onMouseEnter={toggleHover}>Help</Link></li>
 
-
-    
-        
-
-    
-   
-        
-        
-
-       
-   
-      </div>
-        
-         
-      )}
+     
+      </ul>
+       </div>
+        )}  
 
 <p className={style.heading}>View or Manage your Order</p>
 <p className={style.paragraph}>To check the status of your order ,or to start a return,<br/>

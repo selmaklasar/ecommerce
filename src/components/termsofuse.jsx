@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
-import style from"./privacypolicy.module.css";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import style from "./termsofuse.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping ,faHeart,faBars,faSearch } from '@fortawesome/free-solid-svg-icons';
-function Privacypolicy() {
+
+function Termsofuse() {
   const[hover,setHover]= useState(false);
   const toggleHover= () => {
     setHover(!hover);
@@ -86,6 +88,10 @@ function Privacypolicy() {
          
       )}
       </div>
-  )}
 
-export default Privacypolicy
+
+   
+  )
+}
+
+export default Termsofuse

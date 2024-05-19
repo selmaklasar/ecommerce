@@ -7,6 +7,12 @@
    
   
 }
+.body{
+    position: relative;
+    align-items: center;
+    display: flex;
+    padding-left: 250px;
+}
 .feedback{
   padding: 150px;
 }

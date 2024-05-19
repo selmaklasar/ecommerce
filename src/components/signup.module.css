@@ -1,6 +1,6 @@
 .header{
    width: 100%;
-   height: 100px;
+   height: 70px;
    background:  rgb(29, 28, 33);
    display: flex;
  
@@ -13,7 +13,7 @@
  
  }
  .links{
-   margin-top: -45px;
+  margin-top: -30px;
    
  }
  .links :hover{
@@ -57,7 +57,7 @@
  top: 27px;
    z-index: 1000;
    position: absolute;
-   margin-left: -50px;
+   margin-left: 450px;
  display: none;
  }
  .hovermenu p{
@@ -113,12 +113,58 @@
    list-style: none;
    padding-right: 38px;
    
-   margin-top: 49px;
+   margin-top: 29px;
  
   
  
    
  }
+ .hovermenu  {
+  background-color: #fff;
+  width: 120px;
+  height: 150px;
+  top: 20px; 
+  z-index: 1000;
+  position: absolute;
+  margin-left: 750px;
+display: none;
+
+
+
+
+}
+.hovermenu p{
+  color: #050000;
+ padding-left: 40px;
+ 
+ 
+
+
+}
+.hoverhelp_link{
+  padding: 13px;
+  font-weight: 500;
+}
+.help_link:hover .hovermenu{
+  display: block;
+}
+.hovermenu  a{
+margin-right: 50px;
+ color: #050000;
+ width: 70px;
+ padding: 3px;
+ 
+}
+.hovermenu {
+  display: none; 
+}
+
+.help_link:hover + .hovermenu,
+.hovermenu:hover {
+  display: block; /* show when hovering over the link */
+  
+}
+ 
  li{
    display: inline;
    float: right;
@@ -210,37 +256,6 @@
    background-color: none;
  
  }
- .btncontainer ul {
-   padding-top: 90px;
-  padding-left: 250px;
-  
-   list-style-type: none; /* Removes bullet points from the list */
-   font-size: 15px;
-  
-   display: flex;
-   margin-right: 25px;
- }
- 
- 
- 
- .dropdwn:hover  .dropdownContent{
-   display: block;
-   text-decoration: none;
-   padding: 10px 15px;
- 
- }
- 
- 
- 
-   
-   
- 
-   .dropdownContent a{
-   display: none;
-   color: #050000;
-   text-decoration: none;
-   padding: 10px 15px;
- }
  
  
  
@@ -250,7 +265,7 @@
      display: none;
    }
    .headericons{
-     margin-top: 41px;
+     margin-top: 32px;
    }
    .bars {
      display: block;
@@ -262,10 +277,7 @@
      right: 0;
    }
   
-  .btncontainer{
-   padding-top: 90px;
-   padding-left: 50px;
-  }
+  
    
  }
  
@@ -274,7 +286,7 @@
      display: none;
    }
    .headericons{
-     margin-top: 49px;
+    margin-top: 32px;
      display: inline;
    }
    .bars {
@@ -287,14 +299,7 @@
      right: 0;
    }
   
-  .btncontainer ul{
-   padding-top: 50px;
-   padding-left: 30px;
-   font-size: 10px;
-   
-   
- 
-  }
+  
    
  }
  
@@ -303,7 +308,7 @@
      display: none;
    }
    .headericons{
-     margin-top: 49px;
+    margin-top: 32px;
    }
    .bars {
      display: block;
@@ -315,19 +320,7 @@
      right: 0;
    }
   
-  .btncontainer  ul{
- 
-   
-   padding-left: 259px;
- 
-   padding-top: 34px;
- 
-   
-   font-size: 15px;
-   
-   
- 
-  }
+  
    
  }
  
@@ -341,7 +334,7 @@
 .form_submission{
    
       width: 350px;
-      height: 350px;
+      height: 370px;
  border: 1px solid rgb(149, 145, 145);
    border-radius: 3px;
    padding: 20px;
@@ -357,9 +350,10 @@
 input{
    width: 270px;
    height: 20px;
-   border-radius: 1px;
+   border-radius: 3px;
    font-size: 10px;
-   
+   border-style:  inset;
+   border-width: 1px;
 }
 label{
    font-size: 10px;
@@ -367,28 +361,33 @@ label{
    
    
 }
+
 .btn{
    font-size: 10px;
    margin: 10px  0;
    padding: 5px 19px;
-   border-radius: 3px;
+   border-radius: 4px;
    color: #fff;
    background-color: rgba(42, 40, 48, 0.923);
    margin: 10px  0;
   font-weight: bold;
    
 }
+
 .submitbtn{
 padding-top: 15px;
+
+padding-left: 121px;
+
 }
 .hovermenu  {
   background-color: #fff;
   width: 120px;
   height: 150px;
-top: 27px;
+  top: 27px;
   z-index: 1000;
   position: absolute;
-  margin-left: -90px;
+  margin-left: 750px;
 display: none;
 }
 .hovermenu p{
@@ -413,7 +412,18 @@ margin-right: 50px;
  padding: 3px;
  
 }
-
+.loginlink{
+  align-content: center;
+  text-align: center;
+ font-size: 10px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.loginlink p{
+  text-decoration: none;
+  color: #1D1c21;
+  font-weight: 500;
+}
  
    
  

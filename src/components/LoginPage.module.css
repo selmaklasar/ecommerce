@@ -54,11 +54,15 @@
     background-color: #fff;
     width: 120px;
     height: 150px;
-  top: 27px;
+  top: 40px;
     z-index: 1000;
     position: absolute;
-    margin-left: 750px;
+    margin-left: -50px;
+  
   display: none;
+  
+  
+  
   }
   .hovermenu p{
     color: #050000;
@@ -80,27 +84,14 @@
    color: #050000;
    width: 70px;
    padding: 3px;
-   margin-left: 190px;
    
-  }
-  .hovermenu {
-    display: none; 
-  }
-  
-  .help_link:hover + .hovermenu,
-  .hovermenu:hover {
-    display: block; /* show when hovering over the link */
-    
   }
   .headericons {
     position: absolute;
     right: 3px; /* Or based on your layout needs */
     top: 0;
     height: 100px; 
-    margin-top: 29px;
-    color: #ffff;
-    list-style: none;
-    padding-right: 38px;
+    
     
   }
   
@@ -121,7 +112,13 @@
   
   }
   
- 
+  .headericons{
+    color: #ffff;
+    list-style: none;
+    padding-right: 38px;
+    margin-top: 29px;
+    
+  }
   li{
     display: inline;
     float: right;
@@ -203,6 +200,56 @@
     padding: 0;
   
   }
+  .help_link{
+    color: #ffff;
+    
+  }
+  .hovermenu  {
+    background-color: #fff;
+    width: 120px;
+    height: 150px;
+    top: 24px; 
+    z-index: 1000;
+    position: absolute;
+    margin-left: 950px;
+  display: none;
+  
+  
+  
+  
+  }
+  .hovermenu p{
+    color: #050000;
+   padding-left: 40px;
+   
+   
+  
+  
+  }
+  .hoverhelp_link{
+    padding: 13px;
+    font-weight: 500;
+  }
+  .help_link:hover .hovermenu{
+    display: block;
+  }
+  .hovermenu  a{
+  margin-right: 50px;
+   color: #050000;
+   width: 70px;
+   padding: 3px;
+   margin-left: 490px;
+   
+  }
+  .hovermenu {
+    display: none; 
+  }
+  
+  .help_link:hover + .hovermenu,
+  .hovermenu:hover {
+    display: block; /* show when hovering over the link */
+    
+  }
     button{
     
     color: #020202fc;
@@ -253,7 +300,7 @@
       display: none;
     }
     .headericons{
-      margin-top: 41px;
+      margin-top: 32px;
     }
     .bars {
       display: block;
@@ -277,7 +324,7 @@
       display: none;
     }
     .headericons{
-      margin-top: 49px;
+      margin-top: 32px;
       display: inline;
     }
     .bars {
@@ -306,7 +353,7 @@
       display: none;
     }
     .headericons{
-      margin-top: 49px;
+      margin-top: 32px;
     }
     .bars {
       display: block;
@@ -333,70 +380,209 @@
    }
     
   }
-  
-  .heading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 140px;
-    font-size: 20px;
-    padding-left: 120px;
-    font-weight: bold;
-  }
-  .paragraph{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
+
+
+
+.inputbox{
+    position: relative;
+    margin: 20px o;
+
+}
+.inputbox2{
+    position: relative;
+    margin: 20px o;
+
+}
+.inputbox label{
+    position: absolute;
+    top: 10%;
+   color: black;
+    transform: translate(-50%);
+    pointer-events: none;
+    padding: 0 10px;
+    transition: -5px;
+    left: 27px;
     font-size: 15px;
     
-  }
-  .datacollection{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-left: 10px;
+    left: 31px;
 
-    font-size: 10px;
-    padding: 10px;
+
+}
+.inputbox input{
+    width: 270px;
+    height: 30px;
+    border: 1px solid;
+    padding: 0 15px;
+    outline: none;
+    border-radius: 5px;
+    
+    
+    margin-bottom: 36px;
+
+
+}
+.inputbox2 input{
+    width: 270px;
+    height: 30px;
+    border: 1px solid;
+    padding: 0 15px;
+    outline: none;
+    border-radius: 5px;
+    
+    
+    margin-bottom: 36px;
+
+
+
+}
+.inputbox2 label{
+    position: absolute;
+    top: 10%;
+   color: black;
+    transform: translate(-50%) ;
+    pointer-events: none;
+    padding: 0 10px;
+    transition: -5px;
+    left: 27px;
+    font-size: 15px;
+    
+    left: 37px;
+
+    padding-left: 18px;
+   
+
+}
+
+.inputbox label:focus~label,
+.inputbox input:valid~label{
+    top: 0;
+    font-size: 12px;
+    background-color: rgb(252, 252, 255);
+    padding-left: 5px;
+    top: -10px;
+    transition: left 1s ease-in;
+
+
+}
+.inputbox2 label:focus~label,
+.inputbox2 input:valid~label{
+    top: 0;
+    font-size: 12px;
+    background-color: rgb(252, 252, 255);
+    padding-left: 9px;
+    top: -10px;
+
+
+}
+
+  .condition p{
+    align-content: center;
+    text-align: center;
+   font-size: 10px;
+    margin-top: 0px;
+    padding-top: 0px;
+  } 
+  
+   .privacypolicy{
+    text-decoration: none;
+    color: #1D1c21;
+    font-weight: 500;
     
   }
-  input{
-    width: 300px;
-    height: 30px;
+  .terms{
+    text-decoration: none;
+    color: #1D1c21;
+    font-weight: 500;
+  }
+  .newuser p{
+    align-content: center;
+    text-align: center;
+   font-size: 10px;
    
+    padding-top: 0px;
+    margin-top: 27px;
+
   }
-  .email{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     
-  height: 25px;
-  font-size: 10px;
+  .newuser a{
+    text-decoration: none;
+    color: #1D1c21;
+    font-weight: 500;
+    
+  
+  
   }
-  .btnsbmit{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .btnsubmit{
+    width: 250px;
+    height: 45px;
     padding-top: 10px;
     
+   
+    margin-left: 100px;
+
+    
+  
+    display: flex;
+    justify-content: center; 
+    align-items: center;
   }
-  button{
-    font-size: 15px;
-    background-color: #0e0d0d;
-    color: #e9e2e2;
+  .btn{
+    font-size: 10px;
+    margin: 10px  0;
+    padding: 5px 19px;
     border-radius: 3px;
-    padding-left: 16px;
-    
+    color: #fff;
+    background-color: rgba(42, 40, 48, 0.923);
+    margin: 10px  0;
+   font-weight: bold;
+   
+   
+  
     
   }
-  
-  
-  
-  
-  
-  
-  
+  .btn{
+    background-color: rgba(19, 19, 19, 0.923);
+    color: #f1eded;
+  }
+  .btn:hover{
+    background-color: rgba(42, 40, 48, 0.923);
     
+    border-color: rgb(242, 235, 235);
+    
+  }
+  .heading{
+    font-size: 15px;
+    padding-left: 100px;
+    color: rgba(42, 40, 48, 0.923);
+  }
+  
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 1px solid rgb(149, 145, 145);
+    border-radius: 3px;
+    padding: 10px 40px;
+    width: 350px;
+    height: 320px;
+   
+   
+    
+   }
+  
+   
+  
+   .login_form{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding-top: 90px;
+    
+  }
   
   
   
